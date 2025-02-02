@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love</title>
+</head>
+<body>
+    <link rel="stylesheet" href="./style.css" />
+    <div class="container">
+        <div class="tenor-gif-embed" data-postid="6995470338784835180" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/love-gif-6995470338784835180">Love Sticker</a>from <a href="https://tenor.com/search/love-stickers">Love Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+        <h1>Hihi, I love you so much sweetheart</h1>
+
+        <script>
+            function createHeart() {
+                const heart = document.createElement("div");
+                heart.innerHTML = "❤️";
+                heart.classList.add("heart");
+                heart.style.left = Math.random() * 100 + "vw";
+                heart.style.animationDuration = Math.random() * 2 + 3 + "s";
+                document.body.appendChild(heart);
+    
+                setTimeout(() => {
+                    heart.remove();
+                }, 3000);
+            }
+    
+            setInterval(createHeart, 300);
+        </script>
+</body>
+</html>

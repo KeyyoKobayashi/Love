@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love</title>
+</head>
+<body>
+    <link rel="stylesheet" href="./style.css" />
+    <div class="container">
+        <div class="tenor-gif-embed" data-postid="24469402" data-share-method="host" data-aspect-ratio="1.09966" data-width="100%"><a href="https://tenor.com/view/milk-and-mocha-gif-24469402">Milk And Mocha Sticker</a>from <a href="https://tenor.com/search/milk+and+mocha-stickers">Milk And Mocha Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+        <h1>I will ask you again. Are you loyal?</h1>
+
+    <div class="button">
+        <a href="end.html">YES</a>
+        <a href="nloyalanymore.html">NO</a>
+    </div>
+
+    <script>
+        function createFire() {
+            const fire = document.createElement("div");
+            fire.innerHTML = "🔥";
+            fire.classList.add("fire");
+            fire.style.left = Math.random() * 100 + "vw";
+            fire.style.animationDuration = Math.random() * 2 + 3 + "s";
+            document.body.appendChild(fire);
+
+            setTimeout(() => {
+                fire.remove();
+            }, 3000);
+        }
+
+        setInterval(createFire, 300);
+    </script>
+</body>
+</html>
